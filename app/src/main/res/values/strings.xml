@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExaminationS</string>
+    <string name="student">Student</string>
+    <string name="instructor">Instructor</string>
+    <string name="student_id">Student ID</string>
+    <string name="student_name">Student name</string>
+    <string name="instructor_username">username</string>
+    <string name="instructor_password">password</string>
+    <string name="login">Login</string>
+    <string name="welcome_student">Welcome student</string>
+    <string name="welcome_instructor">Welcome instructor</string>
+    <string name="add_new_quiz">Add New Quiz</string>
+    <string name="edit_quiz">Edit Existing Quiz</string>
+    <string name="view_records">View Records</string>
+    <string name="logout">Logout</string>
+
+
+</resources>

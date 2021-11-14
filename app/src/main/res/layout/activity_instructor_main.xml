@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorMain"
+    android:background="#EEFCFF">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginVertical="100dp"
+        android:background="#EEFCFF"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="100dp">
+
+        <TextView
+            android:id="@+id/welcomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="name"
+            android:textSize="25dp"
+
+            />
+
+        <Button
+            android:id="@+id/addQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/welcomeName"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#4DC5DB"
+            android:onClick="AddQuiz"
+            android:text="@string/add_new_quiz"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/editQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/addQuiz"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#4DC5DB"
+            android:onClick="EditQuiz"
+            android:text="@string/edit_quiz"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/viewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/editQuiz"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#4DC5DB"
+            android:onClick="ViewRecords"
+            android:text="@string/view_records"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/logoutI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:gravity="bottom"
+            android:layout_below="@+id/viewRecords"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:onClick="Logout"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

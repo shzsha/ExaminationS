@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorLogin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEFCFF"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/_logo"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:id="@+id/welcomeInstructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_instructor"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"
+
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:ems="10"
+            android:hint="@string/instructor_username"
+            android:minHeight="48dp"
+           android:layout_marginVertical="20dp"
+            android:background="@color/white"
+            android:textColor="#6CAFBD"
+            />
+
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/username"
+            android:hint="@string/instructor_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:background="@color/white"
+            android:textColor="#6CAFBD"/>
+
+
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Password"
+            android:backgroundTint="#4DC5DB"
+            android:onClick="Login"
+            android:text="@string/login"
+            android:layout_marginVertical="20dp"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wrongCred"
+            android:layout_below="@+id/forgotPass"
+            android:text="Wrong Credentials"
+            android:textStyle="bold"
+            android:layout_marginTop="15px"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:visibility="invisible"
+            />
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
